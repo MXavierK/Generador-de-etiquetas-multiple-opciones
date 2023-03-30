@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas multiple</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link id="estilos" rel="stylesheet" href="/Medidas/styles_8x6.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="conteiner" id="divEncabezado">
+        <h1 style="color:white">Generador de etiquetas</h1>
+        <div class="radio-inputs">
+		<label>
+			<input class="radio-input" id="chbox1" type="radio" name="engine">
+				<span class="radio-tile">
+					<span class="radio-icon">
+						<i class="fa-solid fa-image"></i>
+					</span>
+					<span class="radio-label">10x10</span>
+				</span>
+		</label>
+		<label>
+			<input checked="" class="radio-input" id="chbox2" type="radio" name="engine">
+			<span class="radio-tile">
+				<span class="radio-icon">
+                    <i class="fa-solid fa-panorama"></i>
+				</span>
+				<span class="radio-label">8x6</span>
+			</span>
+		</label>
+		<label>
+			<input class="radio-input" id="chbox3" type="radio" name="engine">
+			<span class="radio-tile">
+				<span class="radio-icon">
+                    <i class="fa-regular fa-image"></i>
+				</span>
+				<span class="radio-label">Otro</span>
+			</span>
+		</label>
+</div>
+        <div id="btnsHeader">
+            <div class="button" onclick="obtenerDatos()">
+                <div class="button-wrapper btnEtiquetas">
+                    <div class="text">Crear Etiquetas</div>
+                    <span class="icon">
+                        <i class="fa-solid fa-ticket"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="button" onclick="descargarImagenes()">
+                <div class="button-wrapper btnDownload">
+                    <div class="text">Descargar</div>
+                    <span class="icon">
+                        <i class="fa-solid fa-circle-down"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="ContenidoCodigos">
+            <!-- Aqui se ingresan cada etiqueta a imprimir, se generan por javascrip y se colocan en este div -->
+        </div>
+    </div>
+    <footer>
+        <div class="elevator-button" onclick="Elevator()" id="btnElevator">
+            <i class="fa-solid fa-angles-up fa-beat fa-2xl" style="color: #fcfcfc;"></i>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="Librerias_Manuales/JsBarcode.all.min.js"></script> <!-- Libreria para generar códigos de barra LibreriaName: jsBarcode-->
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script> <!-- Libreria para poder descargar y se descargar mas de un elemento en .zip LibreriaName: jszip-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script><!-- Libreria para poder descargar LibreriaName: FileSaver JS -->
+    <script src="Librerias_Manuales/html2canvas.min.js"></script> <!-- Libreria que te permite descargar cosas del DOM LibreriaName: html2canvas-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dec57695d3.js" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+ .logo {
+   display: block;
+   width: 7cm;
+   height: 1.5cm;
+   margin: auto;
+ }
+
+ .titleEtiqueta {
+   text-align: center;
+   font-size: 12px;
+ }
+
+ .barcode {
+   display: block;
+   margin: auto;
+   height: 100px;
+ }
+
+ #diviconos {
+   display: flex;
+   justify-content: space-around;
+ }
+
+ .iconos {
+   height: 10px;
+   width: 10px;
+ }
+
+ .descriptionFooter {
+
+   font-size: 10px;
+ }
+
+ #footerEtiqueta {
+   display: flex;
+   justify-content: space-around;
+ }
+
+
+ .boxEtiqueta {
+   width: 8cm;
+   height: 6cm;
+   border: solid 1px;
+   background-color: white;
+   margin-bottom: 10px;
+ }
